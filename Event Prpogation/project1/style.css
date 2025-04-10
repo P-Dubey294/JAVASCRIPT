@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    user-select: center;
+}
+#draggable {
+   
+    display: flex;
+    height: 150px;
+    width: 350px;
+    text-align:  center;
+    align-items: center;
+    background: aliceblue;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+.dropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background: blueviolet;
+    margin: 10px;
+    padding: 10px;
+}
+.dropzone .dragover {
+    background-color: purple;
+}
+.dragging {
+    opacity: 0.5;
+}

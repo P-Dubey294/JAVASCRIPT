@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lilita+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredericka the Great", serif;
+
+}
+body {
+    background-image: url(bg.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.TicTac{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight:400;
+    font-size: 40px;
+    border-radius: 8px;
+    color: black;
+    border: black;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+#restbtn{
+    width: 320px;
+    font-size: 30px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 34px;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: rgba(88, 77, 77, 0);
+    color: aliceblue;
+    transition-duration: 1s;
+    border: solid 1px whitesmoke;
+}
+#restbtn:hover{
+    background-color: rgba(186, 171, 171, 0.308);
+    color: rgba(255, 255, 255, 0.966);
+    transition-duration: 1s;
+    border: solid 1px whitesmoke;
+}
+.winnerClass {
+    background-color: rgb(239, 251, 12);
+}
+@media screen and (max-width: 348px) {
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+}
